@@ -1,0 +1,95 @@
+.page {
+  min-height: calc(100vh - 80px);
+  padding: 3rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.page.light {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+.page.dark {
+  background-color: #0d1117;
+  color: #ecf0f1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-post-card {
+  padding: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.blog-post-card.light {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.blog-post-card.dark {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-date {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.post-excerpt {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.page.light .read-more {
+  color: #3498db;
+}
+
+.page.dark .read-more {
+  color: #58a6ff;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
