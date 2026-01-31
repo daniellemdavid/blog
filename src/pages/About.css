@@ -1,0 +1,55 @@
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.about-content.light {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.about-content.dark {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+}
+
+.about-content p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.about-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.about-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.about-content ul li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.about-content ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+}
+
+.page.light .about-content ul li::before {
+  color: #3498db;
+}
+
+.page.dark .about-content ul li::before {
+  color: #58a6ff;
+}
